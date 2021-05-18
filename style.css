@@ -1,0 +1,170 @@
+/* RESET E DEFINIÇÔES GERAIS */
+body,
+ul,
+li,
+h1,
+p {
+  background-color: hsl(230, 100%, 99%);
+  background-image: url("assets/bg-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  font-family: "Manrope", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Titulo */
+
+.titulo {
+  text-align: center;
+  padding: 100px 0px;
+  background: url("assets/pattern-circles.svg") no-repeat center center;
+}
+
+.titulo h1 {
+  color: hsl(227, 35%, 25%);
+  font-size: 1.75em;
+  margin-bottom: 10px;
+}
+
+.titulo p {
+  color: hsl(225, 20%, 60%);
+  font-size: 15px;
+}
+
+/* CONTAINER */
+
+.container {
+  background: white;
+  display: block;
+  width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+.container > div {
+  display: flex;
+  align-items: center;
+}
+
+.info1 span:nth-of-type(1) {
+  text-transform: uppercase;
+  color: hsl(225, 20%, 60%);
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  flex: 1;
+}
+
+.info1 span:nth-of-type(2) {
+  text-transform: uppercase;
+  color: hsl(227, 35%, 25%);
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.info1 span:nth-of-type(3) {
+  color: hsl(225, 20%, 60%);
+  font-size: 0.75rem;
+  margin-left: 5px;
+}
+
+.container input {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.info2 span:nth-of-type(1) {
+  color: hsl(225, 20%, 60%);
+  font-size: 0.75rem;
+}
+
+.info2 span:nth-of-type(2) {
+  color: hsl(225, 20%, 60%);
+  font-size: 0.75rem;
+}
+
+.info2 span:nth-of-type(3) {
+  color: hsl(15, 100%, 70%);
+  font-size: 0.7rem;
+  display: inline-block;
+  background-color: hsl(14, 92%, 95%);
+  padding: 0px 5px;
+}
+
+.info2 span:nth-of-type(3)::after {
+  content: "";
+  display: block;
+  width: 450px;
+  height: 1px;
+  background: hsl(224, 65%, 95%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 170px;
+}
+
+.info2 {
+  margin-left: auto;
+}
+
+.info2 span {
+  margin: 5px 10px;
+}
+
+.info3 {
+  display: flex;
+  padding-top: 45px;
+}
+
+.info3 ul {
+  background: white;
+}
+
+.info3 ul li {
+  background: white;
+  color: hsl(225, 20%, 60%);
+  font-size: 0.75rem;
+  margin: 10px 0;
+}
+
+.info3 ul li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url("assets/icon-check.svg") no-repeat center center;
+  background-size: cover;
+  margin-right: 15px;
+}
+
+.info3 ul {
+  flex: 1;
+}
+
+.info3 .cta {
+  flex: 1;
+}
+
+.cta button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 35px;
+  font-weight: 800;
+  border-radius: 20px;
+  border: none;
+  color: hsl(226, 100%, 87%);
+  background: hsl(227, 35%, 25%);
+}
