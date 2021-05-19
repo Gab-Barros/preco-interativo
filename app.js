@@ -1,5 +1,3 @@
-// Desenvolvido por Gabriel Barros
-
 const vm = new Vue({
   el: '#app',
   data: {
