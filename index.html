@@ -11,30 +11,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="titulo">
-    <h1>Simple, traffic-based pricing</h1>
-    <p>Sign-up for our 30-days trial. No credit card required.</p>
-  </section>
-  <section class="container">
-    <div class="info1">
-      <span>100k pageviews</span><span>$16.00</span><span>/month</span>
-    </div>
-    <input type="range" name="" id="">
-    <div>
-      <div class="info2">
-        <span>Monthly Biling</span><span>Yearly Billing</span><span>25% discount</span>
+  <div id="app">
+    <section class="titulo">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-days trial. No credit card required.</p>
+    </section>
+    <section class="container">
+      <div class="info1">
+        <span>100k pageviews</span><span>$16.00</span><span>/month</span>
       </div>
-    </div>
-    <div class="info3">
-      <ul>
-        <li>Unlimited Websites</li>
-        <li>100% data ownership</li>
-        <li>Email reports</li>
-      </ul>
-      <div class="cta">
-        <button>Start my trial</button>
+      <input type="range" min="0" max="100" step="1" v-model="slide">
+      <span class="bgSlide"></span>
+      <div>
+        <div class="info2">
+          <span>Monthly Biling</span><span>Yearly Billing</span><span>25% discount</span>
+        </div>
       </div>
-    </div>
-  </section>
+      <div class="info3">
+        <ul>
+          <li>Unlimited Websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <div class="cta">
+          <button>Start my trial</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
