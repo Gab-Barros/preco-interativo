@@ -7,7 +7,7 @@ p {
   background-color: hsl(230, 100%, 99%);
   background-image: url("assets/bg-pattern.svg");
   background-repeat: no-repeat;
-  background-position: 50% 20%;
+  background-position: center top;
   font-family: "Manrope", sans-serif;
   margin: 0px;
   padding: 0px;
@@ -19,6 +19,11 @@ ul {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
 }
 
 /* Titulo */
@@ -49,6 +54,7 @@ ul {
   margin: 0 auto;
   padding: 20px;
   position: relative;
+  box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.2);
 }
 
 .container > div {
@@ -119,6 +125,8 @@ ul {
 .info2 {
   margin-left: auto;
   padding-top: 25px;
+  display: flex;
+  align-items: center;
 }
 
 .info2 span {
@@ -170,6 +178,10 @@ ul {
   background: hsl(227, 35%, 25%);
 }
 
+.cta button:active {
+  color: white;
+}
+
 /* Estilo Range Input */
 
 input[type="range"] {
@@ -188,12 +200,14 @@ input[type="range"]::-webkit-slider-runnable-track {
   background: hsl(224, 65%, 95%);
   height: 7px;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 input[type="range"]::-moz-range-track {
   background: hsl(224, 65%, 95%);
   height: 7px;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -220,6 +234,7 @@ input[type="range"]::-moz-range-thumb {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60%;
+  box-shadow: 0px 10px 30px hsl(174, 86%, 45%);
 }
 
 .bgSlide {
@@ -231,4 +246,44 @@ input[type="range"]::-moz-range-thumb {
   position: relative;
   margin-right: auto;
   top: -28px;
+}
+
+/* Estilo Toggle Button */
+
+.toggle {
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+  border: none;
+  background: hsl(223, 50%, 87%);
+  border-radius: 10px;
+}
+
+.toggle::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  border-radius: 50%;
+  height: 12px;
+  background: white;
+  position: relative;
+  top: 2px;
+  right: 8px;
+  transition: all 0.2s;
+}
+
+.toggle.ativo::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  border-radius: 50%;
+  height: 12px;
+  position: relative;
+  top: 2px;
+  transform: translate3d(16px, 0, 0);
+}
+
+.toggle.ativo {
+  transition: 0.2s;
+  background: hsl(174, 77%, 80%);
 }

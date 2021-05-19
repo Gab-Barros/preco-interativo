@@ -18,13 +18,13 @@
     </section>
     <section class="container">
       <div class="info1">
-        <span>100k pageviews</span><span>$16.00</span><span>/month</span>
+        <span>100k pageviews</span><span>${{slide}}.00</span><span>/month</span>
       </div>
       <input type="range" min="0" max="100" step="1" v-model="slide">
       <span class="bgSlide"></span>
       <div>
         <div class="info2">
-          <span>Monthly Biling</span><span>Yearly Billing</span><span>25% discount</span>
+          <span>Monthly Biling</span><button v-on:click="ativo = !ativo" class="toggle" :class="{ativo: ativo}"></button><span>Yearly Billing</span><span>25% discount</span>
         </div>
       </div>
       <div class="info3">
