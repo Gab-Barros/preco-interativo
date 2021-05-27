@@ -12,8 +12,8 @@ const vm = new Vue({
       // o seguinte código aumenta ou diminui o span bgSlide conforme o tamanho
       // da tela, criando a 'parte' verde do input range à esquerda da thumb
       if (telaMobile.matches) {
-        track.style.width = `calc(${this.slide}*2.47px)`;
-      } else track.style.width = `calc(${this.slide}*3.8px)`;
+        track.style.width = `calc(${this.slide}*2.1px)`;
+      } else track.style.width = `calc(${this.slide}*3.4px)`;
     },
   },
 });
