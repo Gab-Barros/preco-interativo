@@ -1,7 +1,7 @@
 <h1 align="center">:moneybag: Componente de preço interativo</h1>
 <h3 align="center">Componente de preço interativo criado como parte de um desafio da front-end mentor.</h3>
 <h4 align="center"> 
-	🚧  Projeto em andamento 🚀 🚧
+	🚧  Concluído 🚀 🚧
 </h4>
 
 ## :computer: Sobre o projeto
