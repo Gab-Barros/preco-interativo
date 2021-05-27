@@ -1,15 +1,17 @@
-// Desenvolvido por Gabriel Barros
-
 const vm = new Vue({
-  el: '#app',
+  el: "#app",
   data: {
     slide: 50,
-    ativo: false
+    ativo: false,
   },
   watch: {
-    slide(){
-      const track = document.querySelector('.bgSlide')
-      track.style.width = `calc(${this.slide}*3.8px)`
-    }
+    slide() {
+      const track = document.querySelector(".bgSlide");
+      const telaMobile = window.matchMedia("(max-width: 450px)");
+
+      if (telaMobile.matches) {
+        track.style.width = `calc(${this.slide}*2.47px)`;
+      } else track.style.width = `calc(${this.slide}*3.8px)`;
+    },
   },
-})
+});
